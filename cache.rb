@@ -16,4 +16,8 @@ class Cache
     def self.connection_cached_for?(user)
         return @@cache.has_key?(user)
     end
+
+    def self.who_is_connected?()
+        return @@cache.keys
+    end
 end
